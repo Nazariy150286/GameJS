@@ -26,3 +26,15 @@ body {
     margin: 0 auto;
     width: 1090px;
 }
+
+.wrapper {
+    max-width: 576px;
+    margin: 0 auto;
+}
+
+.line {
+    stroke-width: 1px;
+    // background-color: #000;
+    border-color: #000;
+    width: 536px;
+}
