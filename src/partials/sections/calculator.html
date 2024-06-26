@@ -1,41 +1,40 @@
 <section class="calculator">
   <div class="container">
-    <h3 class="caclculator__title">Калькулятор</h3>
-    <form class="calculator__form">
-      <input
-        type="number"
-        class="calculator__form-number"
-        placeholder="Введіть число"
-      />
-      <div class="div calculator__form-btn-block">
-        <button class="calculator__form-btn">+</button
-        ><button class="calculator__form-btn">*</button
-        ><button class="calculator__form-btn">-</button
-        ><button class="calculator__form-btn">/</button>
+    <div class="calculator__block">
+      <h2 class="calculator__title">Калькулятор</h2>
+      <div class="calculator__subblock">
+        <input
+          type="number"
+          class="calculator__block-number"
+          placeholder="Введіть число"
+        />
+        <div class="calculator__btn-block">
+          <button class="calculator__btn">+</button
+          ><button class="calculator__btn">*</button
+          ><button class="calculator__btn">-</button
+          ><button class="calculator__btn">/</button>
+        </div>
+        <input
+          type="number"
+          class="calculator__block-number"
+          placeholder="Введіть число"
+        />
+        <button class="calculator__result-btn">=</button>
+        <p class="calculator__result">Результат</p>
       </div>
-      <input
-        type="number"
-        class="calculator__form-number"
-        placeholder="Введіть число"
-      />
-      <button class="calculator__form-btn">=</button>
-      <input
-        type="number"
-        class="calculator__form-result"
-        placeholder="Результат"
-      />
-    </form>
-    <hr />
-    <h3 class="calculator__title">Калькулятор часу</h3>
-    <form class="calculator__time-form">
-      <input
-        type="number"
-        class="calculator__time-input"
-        placeholder="Введіть число"
-      />
-      <btn class="calculator__time-search"></btn>
-      <p>-----------</p>
-      <p class="calculator__result">3 дн. 15:45:01</p>
-    </form>
+      <hr class="calculator__hr" />
+      <h2 class="calculator__subtitle">Калькулятор часу</h2>
+      <div class="calculator__time-block">
+        <input
+          type="number"
+          class="calculator__time-input"
+          placeholder="Введіть число"
+        />
+        <btn class="calculator__time-search"></btn>
+        <p>-----------</p>
+        <p class="calculator__result">3 дн. 15:45:01</p>
+      </div>
+    </div>
+    <hr class="calculator__hr" />
   </div>
 </section>
