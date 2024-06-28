@@ -8,14 +8,15 @@ yearButton.addEventListener("click", () =>{
         yearResult.style.opacity = 100
         yearResult.style.color = "#039900"
     }
-    // else if(yearInput.value == isNaN){
-    //     yearResult.textContent = "Ваші данні не валідні!"
-    //     yearResult.style.opacity = 100
-    //     yearResult.style.color = "red"
-    // }
-    else{
-        yearResult.textContent = "Ви народилися у НЕ високосний рік!"
+    else if(yearInput.value < 1900){
+        yearResult.textContent = "Веддіть коректний рік!"
         yearResult.style.opacity = 100
         yearResult.style.color = "red"
     }
+   else {
+    yearResult.textContent = "Ви народилися у НЕ високосний рік!"
+    yearResult.style.opacity = 100
+    yearResult.style.color = "red"
+     }
+
 })
