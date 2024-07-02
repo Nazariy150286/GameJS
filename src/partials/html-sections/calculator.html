@@ -1,30 +1,30 @@
 <section class="calculator">
   <div class="container">
-    <h3 class="caclculator__title">Калькулятор</h3>
-    <form class="calculator__form">
-      <input
-        type="number"
-        class="calculator__form-number"
-        placeholder="Введіть число"
-      />
-      <div class="div calculator__form-btn-block">
-        <button class="calculator__form-btn">+</button
-        ><button class="calculator__form-btn">*</button
-        ><button class="calculator__form-btn">-</button
-        ><button class="calculator__form-btn">/</button>
+    <div class="calculator__block">
+      <h2 class="calculator__title">Калькулятор</h2>
+      <div class="calculator__subblock">
+        <input
+          type="number"
+          class="calculator__block-number"
+          placeholder="Введіть число"
+          id="inputNum1"
+        />
+        <div class="calculator__btn-block">
+          <button value="+" class="calculator__btn">+</button
+          ><button value="*" class="calculator__btn">*</button
+          ><button value="-" class="calculator__btn">-</button
+          ><button value="/" class="calculator__btn">/</button>
+        </div>
+        <input
+          type="number"
+          class="calculator__block-number"
+          placeholder="Введіть число"
+          id="inputNum2"
+        />
+        <button class="calculator__result-btn" onclick="getResult()">=</button>
+        <p class="calculator__result">Результат</p>
       </div>
-      <input
-        type="number"
-        class="calculator__form-number"
-        placeholder="Введіть число"
-      />
-      <button class="calculator__form-btn">=</button>
-      <input
-        type="number"
-        class="calculator__form-result"
-        placeholder="Результат"
-      />
-    </form>
-    <hr />
+      <hr class="calculator__hr" />
+    </div>
   </div>
 </section>
