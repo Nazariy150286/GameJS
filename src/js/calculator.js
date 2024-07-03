@@ -9,8 +9,8 @@ const result = document.querySelector('.calculator__result');
 // let operationResult = null;
 
 const blockBtns = document.querySelectorAll('.calculator__btn');
-blockBtns.forEach(function (button) {
-  button.addEventListener('click', function () {
+blockBtns.forEach(button => {
+  button.addEventListener('click', () => {
     blockBtns.forEach(btn => btn.classList.remove('calculator__btn--active'));
     button.classList.add('calculator__btn--active');
 
@@ -18,7 +18,7 @@ blockBtns.forEach(function (button) {
   });
 });
 
-resultBtn.addEventListener('click', function () {
+resultBtn.addEventListener('click', () => {
   firstValue = +firstNum.value;
   secondValue = +secNum.value;
 
