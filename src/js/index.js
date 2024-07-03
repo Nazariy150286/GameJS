@@ -1,1 +1,2 @@
-import './year.js';
+import './year';
+import './calculator';
