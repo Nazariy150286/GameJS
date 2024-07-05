@@ -13,6 +13,10 @@
     font-weight: 400;
     font-size: 12px;
     color: $color4;
+    &:hover {
+      background: $color7;
+      transition: 0.5s ease-out;
+    }
   }
   &__btn-block {
     display: flex;
@@ -51,6 +55,19 @@
     font-size: 12px;
     color: $color5;
     cursor: pointer;
+    &:hover {
+      background: $color1;
+      color: $color3;
+      transition: 0.5s ease-out;
+    }
+    &:active {
+      background: $color6;
+      color: $color3;
+    }
+    &:focus {
+      background: #989898;
+      color: $color3;
+    }
   }
   &__result {
     border-radius: 20px;
@@ -62,7 +79,15 @@
     font-weight: 400;
     font-size: 12px;
     color: $color4;
+    &:hover {
+      background: $color7;
+      transition: 0.5s ease-out;
+    }
+    &:active {
+      transition: 0.5s ease-out;
+    }
   }
+
   &__subblock {
     display: flex;
     gap: 38px;
@@ -98,5 +123,10 @@
   }
   &__hr {
     width: 536px;
+  }
+  &__btn--active {
+    background-color: $color1;
+    color: $color3;
+    transition: 0.5s ease-out;
   }
 }
