@@ -10,10 +10,10 @@
           id="inputNum1"
         />
         <div class="calculator__btn-block">
-          <button value="+" class="calculator__btn">+</button
-          ><button value="*" class="calculator__btn">*</button
-          ><button value="-" class="calculator__btn">-</button
-          ><button value="/" class="calculator__btn">/</button>
+          <button data-operation="add" class="calculator__btn">+</button
+          ><button data-operation="multiply" class="calculator__btn">*</button
+          ><button data-operation="subtract" class="calculator__btn">-</button
+          ><button data-operation="divide" class="calculator__btn">/</button>
         </div>
         <input
           type="number"
@@ -21,7 +21,7 @@
           placeholder="Введіть число"
           id="inputNum2"
         />
-        <button class="calculator__result-btn" onclick="getResult()">=</button>
+        <button class="calculator__result-btn">=</button>
         <p class="calculator__result">Результат</p>
       </div>
       <hr class="calculator__hr" />
