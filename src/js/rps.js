@@ -16,21 +16,31 @@ let playerChoice;
 
 const btns = document.querySelectorAll('.rps__block-btn');
 btns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    if(btn.getAttribute('data-check') === 'true') {
-      btn.removeAttribute('data-check')
-      btn.style.border = 'none'
-      btn.style.borderColor = '#000';
-      btn.style.padding = '10px'
-      return
-    }
-    btn.setAttribute('data-check', true)
-    btn.style.border = '3px solid'
-    btn.style.borderColor = '#ff0000';
-    btn.style.padding = '7px'
-    playerChoice = btn.getAttribute('data-value')
-    // console.log(btn.getAttribute('data-value'));
-  })
+    btn.addEventListener('click', () => {
+        // if(btn.getAttribute('data-check') === 'true') {
+        //   btn.removeAttribute('data-check')
+        //   btn.style.border = 'none'
+        //   btn.style.borderColor = '#000';
+        //   btn.style.padding = '10px'
+        //   return
+        // }
+
+        // Видаляємо атрибут data-check з усіх кнопок
+        btns.forEach(b => {
+            b.removeAttribute('data-check');
+            b.style.border = 'none';
+            b.style.padding = '10px';
+        });
+
+        // Додаємо атрибут data-check до поточної кнопки
+
+        btn.setAttribute('data-check', true)
+        btn.style.border = '3px solid'
+        btn.style.borderColor = '#ff0000';
+        btn.style.padding = '7px'
+        playerChoice = btn.getAttribute('data-value')
+        // console.log(btn.getAttribute('data-value'));
+    })
 })
 
 
@@ -46,12 +56,12 @@ const choices = ['rock', 'paper', 'scissors'];
 let computerScore = 0;
 let playerScore = 0;
 
-const getComputerChoice = function() {
+const getComputerChoice = function () {
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
 }
 
-const winnerLogic = function(playerChoice, computerChoice) {
+const winnerLogic = function (playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         result.textContent = 'Нічия!'
         result.style.opacity = '1'
@@ -64,7 +74,7 @@ const winnerLogic = function(playerChoice, computerChoice) {
         result.style.opacity = '1'
         result.style.color = '#039900';
     } else if (playerChoice === 'rock' && computerChoice === 'paper') {
-        computerScore += 1; 
+        computerScore += 1;
         result.textContent = 'Ви програли раунд!'
         result.style.opacity = '1'
         result.style.color = '#FF0000';
