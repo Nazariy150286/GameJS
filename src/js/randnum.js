@@ -11,11 +11,14 @@ btnRandnum.addEventListener('click', () => {
     if (+inputRandnum.value === randomNumber) {
         resultRundnum.textContent = `Вітаю, ви вгадали число! ${randomNumber}`
         resultRundnum.style.color = '#039900';
+        resultRundnum.style.opacity = '1'
     } else if (+inputRandnum.value !== randomNumber){
         resultRundnum.textContent = `Ви не вгадали число! ${randomNumber}`
         resultRundnum.style.color = '#FF0000';
+        resultRundnum.style.opacity = '1'
     } else {
         resultRundnum.textContent = `Введіть число`
+        resultRundnum.style.opacity = '1'
 
     }
 })
