@@ -1,3 +1,5 @@
-import './year.js';
-import './time.js';
-import './calculator.js';
+
+import './year';
+import './calculator';
+import './time'
+
