@@ -34,6 +34,7 @@ const startBtn = document.querySelector('.rps__startbtn');
 const result = document.querySelector('.rps__result');
 const pcScrore = document.querySelector('.js-pcscore');
 const userScore = document.querySelector('.js-userscore');
+const computerResult = document.querySelector('.rps__pcresult')
 
 
 const choices = ['rock', 'paper', 'scissors'];
@@ -53,7 +54,7 @@ const winnerLogic = function (playerChoice, computerChoice) {
     }
     if (playerChoice === 'rock' && computerChoice === 'scissors') {
         playerScore += 1;
-        result.textContent = 'Ви виграли раунд!'
+        result.textContent = 'Ви виграли раунд!';
         result.style.opacity = '1'
         result.style.color = '#039900';
     } else if (playerChoice === 'rock' && computerChoice === 'paper') {
@@ -92,6 +93,15 @@ startBtn.addEventListener('click', () => {
     winnerLogic(playerChoice, computerChoice);
     pcScrore.textContent = computerScore;
     userScore.textContent = playerScore
+
+    if (computerChoice === 'rock') {
+        computerResult.textContent = 'Варіант комп’ютера: камінь';
+    } else if (computerChoice === 'paper') {
+        computerResult.textContent = 'Варіант комп’ютера: папір';
+    } else if (computerChoice === 'scissors') {
+        computerResult.textContent = 'Варіант комп’ютера: ножиці';
+    }
+    computerResult.style.opacity = '1'
 
 });
 
