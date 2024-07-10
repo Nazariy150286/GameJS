@@ -11,7 +11,7 @@ btns.forEach(btn => {
           return
         }
 
-        // Видаляємо атрибут data-check з усіх кнопок
+        
         btns.forEach(b => {
             b.removeAttribute('data-check');
             b.style.border = 'none';
