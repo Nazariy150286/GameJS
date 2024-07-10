@@ -40,6 +40,12 @@
     font-size: 12px;
     color: $color5;
     cursor: pointer;
+
+    &:hover {
+      background: $color1;
+      color: $color3;
+      transition: 0.5s ease-out;
+    }
   }
   &__result-btn {
     border-radius: 20px;
