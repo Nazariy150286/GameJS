@@ -60,6 +60,7 @@
     cursor: pointer;
     & :hover{
       background-color: #7e7e7e;
+      transition: all .5s;
     }
   }
   &__input-wrapper {
