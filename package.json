@@ -5,7 +5,8 @@
   "homepage": "https://Nazariy150286.github.io/GameJS",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /GameJS/"
+    "build": "parcel build src/*.html --public-url /GameJS/",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
