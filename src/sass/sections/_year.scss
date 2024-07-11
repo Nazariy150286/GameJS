@@ -10,7 +10,7 @@
 
   &__hr {
     width: 536px;
-    color: #7e7e7e;
+    background: #7e7e7e;
   }
 
   &__game-name {
@@ -51,14 +51,20 @@
     justify-content: center;
     align-items: center;
     gap: 149px;
+    margin-bottom: 37px;
   }
   &__input-btn {
     border-radius: 0 20px 20px 0;
     background-color: #000;
     padding: 10px;
+    cursor: pointer;
+    & :hover{
+      background-color: #7e7e7e;
+    }
   }
   &__input-wrapper {
     display: flex;
     align-items: center;
+
   }
 }
