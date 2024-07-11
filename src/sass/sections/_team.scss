@@ -1,0 +1,57 @@
+.team{
+    &__title{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        text-align: center;
+        margin-top: 36px;
+    }
+    &__list{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        transition: transform 0.3s ease-in-out;
+        overflow: hidden;
+        width: 300px;
+    }
+    &__mem-name{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+        margin: 30px 0;
+    }
+    &__item-descr{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+    }
+    &__img{
+        width: 150px;
+        height: 150px;
+    }
+    // body {
+    //     font-family: Arial, sans-serif;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     height: 100vh;
+    //     margin: 0;
+    // }
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        // overflow: hidden;
+         width: 300px;
+    }
+    &__item{
+        list-style: none;
+        width: 300px;
+        text-align: center;
+    }
+    
+}

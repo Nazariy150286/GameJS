@@ -4,4 +4,5 @@ import './time'
 import "./randnum.js";
 import './rps';
 
+import './team'
 
