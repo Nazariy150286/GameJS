@@ -1,4 +1,8 @@
 .team{
+    &__wrapper{
+        width:900px;
+        margin: 0 auto;
+    }
     &__title{
         font-family: var(--font-family);
         font-weight: 400;
@@ -11,11 +15,11 @@
     &__list{
         display: flex;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         transition: transform 0.3s ease-in-out;
-        gap: 135px;
-        // width: 300px;
-         overflow: hidden;
+         gap: 295px;
+         width: 315px;
+        //  overflow: hidden;
     }
     &__mem-name{
         font-family: var(--font-family);
@@ -52,7 +56,8 @@
     }
     &__item{
         list-style: none;
-         width: 700px;
+        width: 315px;
+        min-width: 315px;
         text-align: center;
     }
     &__nextBtn{
@@ -67,4 +72,10 @@
         border: 0;
         cursor: pointer;
     }
+
+
+
+}
+.active-identificator{
+
 }

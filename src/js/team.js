@@ -5,7 +5,7 @@ const nextBtn = document.querySelector('.team__nextBtn');
 
 let currentIndex = 0;
 nextBtn.addEventListener('click', () => {
-    if (currentIndex < sliderChild.length - 1) {
+    if (currentIndex < sliderChild.length + 6) {
         currentIndex++;
         updateSlider();
     }
@@ -20,6 +20,6 @@ prevBtn.addEventListener('click', () => {
 
 
 function updateSlider() {
-    const offset = -currentIndex * 300;
+    const offset = -currentIndex * 610;
     slider.style.transform = `translateX(${offset}px)`;
 }
