@@ -19,17 +19,13 @@
   }
   &__items {
     padding-right: 50px;
+    color: inherit;
   }
   &__navigation::after {
     content: url(../images/header/Vector.svg);
     padding-left: 8px;
   }
-  &__magic {
-    font-family: var(--third-family);
-    font-weight: 400;
-    font-size: 12px;
-    color: #000;
-  }
+
   &__menu {
     display: flex;
     justify-content: space-between;
@@ -39,7 +35,7 @@
     align-items: center;
   }
   &__navigation {
-    color: #000;
+    color: inherit;
   }
   &__subitems {
     border-left: 1px solid #000;
@@ -49,6 +45,7 @@
     height: 35px;
     display: flex;
     text-align: center; 
+  color: #000;
   }
   &__subitems3 {
     border-bottom: 1px solid #000;
@@ -57,16 +54,18 @@
     border-radius: 0 0 20px 20px;
     width: 160px;
     height: 35px;
+    background: #fff;
+    color: #000;
   }
   &__submenu {
     display: none;
     position: absolute;
     z-index: 1000;
   }
-  &__navigation:hover + .header__submenu,
-  .header__submenu:hover {
+  &__submenu.show {
     display: block;
   }
+  
   &__subitems:hover, &__subitems3:hover {
     background: #f1f1f1;
     cursor: pointer;
@@ -75,6 +74,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 }
 
@@ -139,4 +139,15 @@ input:checked + .slider:before {
   width: 20px;
   background-color: white;
   border: 0.5px solid #000;
+}
+.dark-theme {
+  background-color: #6f6f6f;
+  color: white;
+}
+body .dark-theme{
+  color: #fff;
+}
+
+.dark-theme .logo path{
+  fill: white; 
 }
