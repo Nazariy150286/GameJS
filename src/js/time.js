@@ -14,7 +14,7 @@ const convertMinutes=()=> {
     totalMinutes %= 60;
     const minutes = totalMinutes % 60;
     const timeResult= document.querySelector('.time__result')
-    timeResult.textContent = `${days} днів, ${hours}:${minutes}`;
+    timeResult.textContent = `${days} днів, ${hours}год:${minutes}хв`;
 
 
 }
