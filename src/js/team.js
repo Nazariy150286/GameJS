@@ -1,5 +1,5 @@
 const slider = document.querySelector('.team__list');
-const slides = document.querySelectorAll('.slider li');
+const slides = document.querySelectorAll('#slider li');
 const nextBtn = document.querySelector(".team__nextBtn")
 const prevBtn = document.querySelector(".team__prevBtn")
 const dots = document.querySelectorAll('.dot');
