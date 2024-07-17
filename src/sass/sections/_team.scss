@@ -35,8 +35,11 @@
     color: #000;
   }
   &__img {
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
     width: 350px;
-    height: 250px;
+    height: 310px;
   }
   // body {
   //     font-family: Arial, sans-serif;
