@@ -1,0 +1,42 @@
+.scientists {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  &__item {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  &__item:hover {
+    background-color: #d3d3d3;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  &__button:hover {
+    background-color: #333;
+  }
+}
+
+.container {
+  text-align: center;
+}
