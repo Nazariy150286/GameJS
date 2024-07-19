@@ -8,8 +8,8 @@ const convertMinutes=()=> {
     }
 
 
-    const days = Math.floor(totalMinutes / 3600);
-    totalMinutes %= 3600;
+    const days = Math.floor(totalMinutes / 1440);
+    totalMinutes %= 1440;
     const hours = Math.floor(totalMinutes/ 60);
     totalMinutes %= 60;
     const minutes = totalMinutes % 60;
