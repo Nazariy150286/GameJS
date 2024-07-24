@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 600px;
+    height: 420px;
   }
   &__item {
     border-radius: 20px;
@@ -39,6 +40,7 @@
     font-weight: 400;
     font-size: 16px;
     color: $color3;
+    margin-top: 36px;
   }
   &__button {
     border-radius: 20px;
