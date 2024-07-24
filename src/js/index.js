@@ -5,3 +5,4 @@ import './randnum.js';
 import './rps';
 import './team';
 import './google-dino.js';
+import './scientists.js';
