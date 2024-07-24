@@ -1,4 +1,7 @@
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &__img {
     padding: 75px 0 75px 0;
     width: 165;
@@ -45,4 +48,9 @@
     color: #000;
     margin-top: 18px;
   }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
