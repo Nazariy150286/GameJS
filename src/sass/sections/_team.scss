@@ -1,0 +1,95 @@
+.team {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+    gap: 295px;
+    width: 315px;
+    //  overflow: hidden;
+  }
+  &__mem-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    margin: 30px 0;
+  }
+  &__item-descr {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+  }
+  &__img {
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
+    width: 350px;
+    height: 310px;
+  }
+  // body {
+  //     font-family: Arial, sans-serif;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     height: 100vh;
+  //     margin: 0;
+  // }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    overflow: hidden;
+    //  width: 1000px;
+  }
+  &__item {
+    list-style: none;
+    width: 315px;
+    min-width: 315px;
+    text-align: center;
+  }
+  &__nextBtn {
+    z-index: 1000;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+  &__prevBtn {
+    z-index: 1000;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+}
+.dots {
+  margin-top: 24px;
+  text-align: center;
+}
+.dots span {
+  border-radius: 3px;
+  width: 18px;
+  height: 3px;
+  margin: 0 6px;
+  display: inline-block;
+  background: #d9d9d9;
+}
+.dots .active {
+  width: 30px;
+  height: 3px;
+  background-color: #717171;
+}

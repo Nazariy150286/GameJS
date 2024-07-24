@@ -3,10 +3,10 @@ let secNum = document.getElementById('inputNum2');
 const resultBtn = document.querySelector('.calculator__result-btn');
 const result = document.querySelector('.calculator__result');
 
-// let btnOperation = null;
-// let firstValue = 0;
-// let secondValue = 0;
-// let operationResult = null;
+let btnOperation = null;
+let firstValue = 0;
+let secondValue = 0;
+let operationResult = null;
 
 const blockBtns = document.querySelectorAll('.calculator__btn');
 blockBtns.forEach(button => {
@@ -19,9 +19,11 @@ blockBtns.forEach(button => {
 });
 
 resultBtn.addEventListener('click', () => {
+  if (firstNum.value === '' && secNum.value === '') {
+    alert('Заповніть дані!');
+  }
   firstValue = +firstNum.value;
   secondValue = +secNum.value;
-
   switch (btnOperation) {
     case 'add':
       operationResult = firstValue + secondValue;
@@ -36,7 +38,7 @@ resultBtn.addEventListener('click', () => {
       operationResult = firstValue / secondValue;
       break;
     default:
-      alert('Виникла помилка!');
+      alert('Введіть числа! 😅');
       return;
   }
   result.textContent = operationResult;
