@@ -65,34 +65,38 @@
   }
   &__nextBtn {
     z-index: 1000;
-    background: #fff;
+    border-inline: 0;
     border: 0;
     cursor: pointer;
+    background-color: white;
+    & svg:hover {
+      fill: #717171;
+    }
   }
   &__prevBtn {
     z-index: 1000;
-    background: #fff;
     border: 0;
     cursor: pointer;
+    background-color: white;
+    & svg:hover {
+      fill: #717171;
+    }
   }
 }
-<<<<<<< HEAD
-=======
 .dots {
-    margin-top:24px ;
-    text-align: center;
+  margin-top: 24px;
+  text-align: center;
 }
 .dots span {
-    border-radius: 3px;
-    width: 18px;
-    height: 3px;
-    margin: 0 6px;
-    display: inline-block;
-    background: #d9d9d9;
+  border-radius: 3px;
+  width: 18px;
+  height: 3px;
+  margin: 0 6px;
+  display: inline-block;
+  background: #d9d9d9;
 }
 .dots .active {
-    width: 30px;
-    height: 3px;
-    background-color: #717171;
+  width: 30px;
+  height: 3px;
+  background-color: #717171;
 }
->>>>>>> 822000eb18d522705c0925b38fbb80efc245d610
