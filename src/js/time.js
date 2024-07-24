@@ -8,13 +8,12 @@ const convertMinutes = () => {
     return;
   }
 
-  const days = Math.floor(totalMinutes / 1440);
-  totalMinutes %= 3600;
-  const hours = Math.floor(totalMinutes / 60);
-  totalMinutes %= 60;
-  const minutes = totalMinutes % 60;
-  const timeResult = document.querySelector('.time__result');
-  timeResult.textContent = `${days} днів, ${hours}год:${minutes}хв`;
-};
-const timeBtn = document.querySelector('.time__btn');
-timeBtn.addEventListener('click', convertMinutes);
+
+    const days = Math.floor(totalMinutes / 1440);
+    totalMinutes %= 1440;
+    const hours = Math.floor(totalMinutes/ 60);
+    totalMinutes %= 60;
+    const minutes = totalMinutes % 60;
+    const timeResult= document.querySelector('.time__result')
+    timeResult.textContent = `${days} днів, ${hours}год:${minutes}хв`;
+

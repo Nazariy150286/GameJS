@@ -15,17 +15,24 @@
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    ❗️❗️❗️ Add partials like so for every page
     <include src="./partials/html-sections/header.html"></include>
-    <include src="./partials/html-sections/year.html"></include>
-    <include src="./partials/html-sections/calculator.html"></include>
-    <include src="./partials/html-sections/time.html"></include>
-    <include src="./partials/html-sections/randnum.html"></include>
-    <include src="./partials/html-sections/rps.html"></include>
-    <include src="./partials/html-sections/team.html"></include>
+    <main class="background">
+      <div class="wrapper-main">
+        <include src="./partials/html-sections/year.html"></include>
+        <include src="./partials/html-sections/calculator.html"></include>
+        <include src="./partials/html-sections/time.html"></include>
+        <include src="./partials/html-sections/google-dino.html"></include>
+        <include src="./partials/html-sections/randnum.html"></include>
+        <include src="./partials/html-sections/rps.html"></include>
+        <include src="./partials/html-sections/team.html"></include>
+        <include src="./partials/html-sections/scientist.html"></include>
+      </div>
+    </main>
 
+    <!-- <include src="./partials/html-sections/team.html"></include> -->
 
-    <!-- Example:   -->
+    Example:
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
