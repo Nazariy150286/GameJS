@@ -5,3 +5,4 @@ import './randnum';
 import './rps';
 import './team';
 import './google-dino';
+import './scientists';
