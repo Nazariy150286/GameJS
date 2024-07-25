@@ -16,9 +16,8 @@ let y = Math.floor(
 );
 
 const cactusRun = () => {
-  cactus.style.right = `${
-    Number(cactus.style.right.split('px')[0]) + 8 + points * 0.05
-  }px`;
+  cactus.style.right = `${Number(cactus.style.right.split('px')[0]) + 8 + points * 0.05
+    }px`;
   x = Math.floor(
     dino.getBoundingClientRect().x + dino.getBoundingClientRect().width / 2
   );
@@ -81,8 +80,9 @@ const jump = () => {
 };
 
 const handleJump = event => {
+  event.preventDefault();
   if (event.code === 'Space') {
-    event.preventDefault();
+
     jump();
   }
 };

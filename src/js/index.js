@@ -1,8 +1,8 @@
 import './year';
 import './calculator';
 import './time';
-import './randnum.js';
+import './randnum';
 import './rps';
 import './team';
-import './google-dino.js';
-import './scientists.js';
+import './google-dino';
+import './scientists';
