@@ -81,5 +81,33 @@ const games =  [
 
     },
 ]
+const allSect = document.getElementById('all')
+const numSect = document.getElementById('number')
+const gameSect = document.getElementById('game')
+const greetingSect = document.getElementById('greeting')
 
+const numerical = document.getElementById('numerical')
+const game = document.getElementById('game')
+const acquaintance = document.getElementById('acquaintance')
 
+numSect.addEventListener('click', () =>  {
+  
+  numerical.style.display = 'block'
+  game.style.display = 'none'
+  acquaintance.style.display = 'none'
+
+})
+gameSect.addEventListener('click', () =>  {
+  
+  numerical.style.display = 'none'
+  game.style.display = 'block'
+  acquaintance.style.display = 'none'
+
+})
+greetingSectSect.addEventListener('click', () =>  {
+  
+  numerical.style.display = 'none'
+  game.style.display = 'none'
+  acquaintance.style.display = 'block'
+
+})
