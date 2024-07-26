@@ -13,19 +13,21 @@
   &__subitems {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    
+
     width: 160px;
     height: 35px;
     display: flex;
-    text-align: center; 
-  color: #000;
-  background: #fff;
+    text-align: center;
+    color: #000;
+    background: #fff;
   }
+
   &__list {
     display: flex;
     margin-right: auto;
-    
+
   }
+
   &__subitems3 {
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
@@ -36,39 +38,49 @@
     background: #fff;
     color: #000;
   }
+
   &__submenu.show {
     display: block;
   }
-  
-  &__subitems:hover, &__subitems3:hover {
+
+  &__subitems:hover,
+  &__subitems3:hover {
     background: #f1f1f1;
     cursor: pointer;
   }
-  &__subitems, &__subitems3 {
+
+  &__subitems,
+  &__subitems3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
   }
+
   &__menu {
     display: flex;
     justify-content: space-between;
   }
+
   &__theme {
     display: flex;
     align-items: center;
+    width: 249px;
   }
+
   &__submenu {
     display: none;
     position: absolute;
     z-index: 1000;
     top: 65px;
   }
+
   &__wrapper {
     display: flex;
     align-items: center;
     gap: 80px;
   }
+
   &__logos {
     display: flex;
     align-items: center;
@@ -78,26 +90,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 160px;
+    gap: 145px;
   }
-  
-  
+
+
   &__items {
     padding-right: 50px;
     color: inherit;
   }
-  
-  &__vector{
+
+  &__vector {
     transition: transform 0.3s ease;
-  &__navigation::after {
-    content: url(../images/header/moon.svg);
-    padding-left: 8px;
-  }
-  
+
+    &__navigation::after {
+      content: url(../images/header/moon.svg);
+      padding-left: 8px;
+    }
+
   }
 
 
 }
+
 .rotated {
   transform: rotate(180deg);
 }
@@ -140,7 +154,7 @@
   bottom: 0;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   content: '';
   background: url('../images/header/moon.svg') no-repeat center center;
   background-size: contain;
@@ -164,14 +178,21 @@ input:checked + .slider:before {
   background-color: white;
   border: 0.5px solid #000;
 }
+
 .dark-theme {
   background-color: #6f6f6f;
   color: white;
 }
-body .dark-theme{
+
+body .dark-theme {
   color: #fff;
 }
 
-.dark-theme .logo path{
-  fill: white; 
+.dark-theme .logo path {
+  fill: white;
+}
+
+.dark-theme .header__vector path {
+  fill: white;
+
 }
