@@ -52,12 +52,14 @@
     align-items: center;
     gap: 149px;
     margin-bottom: 37px;
-   
   }
 
   &__input-wrapper {
     display: flex;
     align-items: center;
-
+  }
+  &__input-btn {
+    border: 0;
+    padding: 12px;
   }
 }

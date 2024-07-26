@@ -65,15 +65,22 @@
   }
   &__nextBtn {
     z-index: 1000;
-    background: #fff;
+    border-inline: 0;
     border: 0;
     cursor: pointer;
+    background-color: white;
+    & svg:hover {
+      fill: #717171;
+    }
   }
   &__prevBtn {
     z-index: 1000;
-    background: #fff;
     border: 0;
     cursor: pointer;
+    background-color: white;
+    & svg:hover {
+      fill: #717171;
+    }
   }
 }
 .dots {
