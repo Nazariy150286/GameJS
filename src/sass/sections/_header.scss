@@ -26,11 +26,9 @@
     padding-right: 50px;
     color: inherit;
   }
-<<<<<<< HEAD
   
   &__vector{
     transition: transform 0.3s ease;
-=======
   &__navigation::after {
     content: url(../images/header/moon.svg);
     padding-left: 8px;
@@ -40,8 +38,7 @@
     font-weight: 400;
     font-size: 12px;
     color: #000;
->>>>>>> f832a532447464403a725134689fc00b52edcd7d
-  }
+}
 
   &__menu {
     display: flex;
@@ -98,7 +95,7 @@
     align-items: center;
     
   }
-}
+  }
 
 .rotated {
   transform: rotate(180deg);
