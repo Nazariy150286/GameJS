@@ -38,7 +38,7 @@ resultBtn.addEventListener('click', () => {
       operationResult = firstValue / secondValue;
       break;
     default:
-      alert('Введіть числа! 😅');
+      alert('Виберіть операцію! 😅');
       return;
   }
   result.textContent = operationResult;

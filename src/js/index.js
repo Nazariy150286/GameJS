@@ -7,3 +7,4 @@ import './team';
 import './google-dino';
 import './scientists';
 import './football';
+import './foter-modal'

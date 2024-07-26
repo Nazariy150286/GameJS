@@ -1,19 +1,24 @@
-const modal = document.getElementById('myModal');
-
-const btn = document.getElementById('openModalBtn');
-
-const span = document.getElementsByClassName('.footer-modal__close')[0];
-
-btn.onclick = function () {
-  modal.style.display = 'block';
+const refs = {
+  openModalBtn: document.querySelector('#openModalBtn'),
+  closeModalBtn: document.querySelector('.footer-modal__close'),
+  modal: document.querySelector('.footer-modal'),
+  input: document.querySelector('.footer__input'),
 };
 
-span.onclick = function () {
-  modal.style.display = 'none';
-};
+function toggleModal() {
+  refs.modal.classList.toggle('is-hidden-subscribe');
+}
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
+function handleOpenModal(e) {
+  e.preventDefault();
+  if(refs.input.value === '') {
+    alert('Заповніть дані!');
+  } else if(refs.input.value.includes('@') && refs.input.value.includes('.') && refs.input.value.length > 5 && refs.input.value.length < 20) {
+    toggleModal();
+  } else {
+    alert('Введіть коректні дані!');
   }
-};
+}
+
+refs.openModalBtn.addEventListener('click', handleOpenModal);
+refs.closeModalBtn.addEventListener('click', toggleModal);

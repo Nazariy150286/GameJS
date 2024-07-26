@@ -1,3 +1,5 @@
+const btnCalcDate = document.querySelector('.time__btn')
+
 const convertMinutes = () => {
   const secondsInput = document.querySelector('.time__input').value;
   let totalMinutes = +secondsInput;
@@ -16,3 +18,6 @@ const convertMinutes = () => {
   const timeResult = document.querySelector('.time__result');
   timeResult.textContent = `${days} днів, ${hours}год:${minutes}хв`;
 };
+
+
+btnCalcDate.addEventListener('click', convertMinutes)
