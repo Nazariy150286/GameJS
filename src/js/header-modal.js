@@ -15,6 +15,7 @@ btnSave.addEventListener('click', (e) => {
     e.preventDefault();
     if(modalInput.value === '' && modalInput.value.length < 10) {
         alert('Заповніть дані!');
+        return
     }
     userContentHeader.textContent = `Вітаємо, ${modalInput.value}!`;
     modalInput.value = '';
