@@ -25,6 +25,7 @@ a {
 
 body {
   font-family: 'Montserrat Alternates', sans-serif;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -48,7 +49,7 @@ h6 {
 
 .line {
     stroke-width: 1px;
-    border-color: #000;
+    border-color: inherit;
     width: 536px;
 }
 
@@ -66,12 +67,12 @@ h6 {
   background-size: cover;
   background-position: center;
 
-  background-color: #F5F5F5;
+  background-color: inherit;
 }
 
 
 .wrapper-main {
   margin: 0 auto;
   width: 1090px; 
-  background-color: #fff;
+  background-color: inherit;
 }
