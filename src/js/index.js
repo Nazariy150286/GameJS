@@ -6,4 +6,5 @@ import './rps';
 import "./football.js"
 import "./foter-modal.js"
 
+import './team'
 
