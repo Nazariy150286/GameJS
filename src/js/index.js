@@ -1,10 +1,9 @@
 import './year';
 import './calculator';
-import './time'
-import "./randnum.js";
+import './time';
+import './randnum';
 import './rps';
-import "./football.js"
-import "./foter-modal.js"
-
-import './team'
-
+import './team';
+import './google-dino';
+import './scientists';
+import './football';

@@ -1,0 +1,157 @@
+.scientists {
+  &__list {
+    margin: 36px 0;
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 420px;
+  }
+  &__item {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    background: $color8;
+    align-content: center;
+  }
+  &__name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 170%;
+    text-align: center;
+    color: $color3;
+  }
+  &__item:hover {
+    border: 1px solid #000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: $color8;
+  }
+  &__buttons {
+    position: relative;
+    margin: 36px 0;
+    width: 100%;
+    max-width: 855px;
+    height: 300px;
+    list-style: none;
+  }
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: $color3;
+    margin-top: 36px;
+  }
+  &__button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: $color3;
+    color: $color5;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    background: $color3;
+  }
+  &__button:nth-child(1) {
+    text-align: right;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: $color5;
+    top: 0px;
+    left: 170px;
+    width: 227px;
+    height: 35px;
+  }
+  &__button:nth-child(2) {
+    text-align: right;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: $color5;
+    top: 50px;
+    left: 117px;
+    width: 282px;
+    height: 35px;
+  }
+  &__button:nth-child(3) {
+    text-align: right;
+    top: 100px;
+    left: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: $color5;
+    width: 380px;
+    height: 35px;
+  }
+  &__button:nth-child(4) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: $color5;
+    top: 0px;
+    left: 450px;
+    width: 298px;
+    height: 35px;
+  }
+  &__button:nth-child(5) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: $color5;
+    top: 50px;
+    left: 450px;
+    width: 441px;
+    height: 35px;
+  }
+  &__button:nth-child(6) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: $color5;
+    top: 100px;
+    left: 450px;
+    width: 375px;
+    height: 35px;
+  }
+  &__button:nth-child(7) {
+    text-align: right;
+    top: 150px;
+    left: 70px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: $color5;
+    width: 329px;
+    height: 35px;
+  }
+  &__button:nth-child(8) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: $color5;
+    top: 150px;
+    left: 450px;
+    width: 368px;
+    height: 50px;
+  }
+  &__button:nth-child(9) {
+    top: 215px;
+    left: 230px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: $color5;
+    width: 489px;
+    height: 35px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
