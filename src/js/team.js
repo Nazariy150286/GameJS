@@ -12,33 +12,23 @@ nextBtn.addEventListener('click', () => {
     currentIndex++;
     updateSlider();
     updateDots();
-    if (currentIndex >= 0) {
-      prevBtn.style.opacity = '1';
-      // prevBtn.style.disabled = false;
-    }
-    if (currentIndex >= 5) {
-      nextBtn.style.opacity = ' 0';
-      // nextBtn.style.disabled = true;
+
+    prevBtn.style.opacity = '1';
+    if (currentIndex === slides.length - 1) {
+      nextBtn.style.opacity = '0';
     }
   }
 });
 prevBtn.addEventListener('click', () => {
-  console.log(currentIndex);
   if (currentIndex > 0) {
     currentIndex--;
     updateSlider();
     updateDots();
-  }
-  if (currentIndex === 1) {
-    prevBtn.style.opacity = '0';
-    console.log(10);
 
-    // nextBtn.style.disabled = true;
-  }
-  if (currentIndex <= 5) {
-    prevBtn.style.opacity = '1';
     nextBtn.style.opacity = '1';
-    // prevBtn.style.disabled = false;
+    if (currentIndex === 0) {
+      prevBtn.style.opacity = '0';
+    }
   }
 });
 function updateSlider() {
