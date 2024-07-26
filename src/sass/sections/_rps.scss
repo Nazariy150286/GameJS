@@ -1,6 +1,10 @@
 .rps {
+    .container {
+        position: relative;
+    }
     &__title {
         margin: 36px 0;
+        color: inherit;
     }
     &__block-btn {
         border: none;
@@ -69,13 +73,14 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 170%;
-        position: relative;
-        top: -77px;
-        left: 785px; 
+
     }
 
     &__list {
         position: absolute;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
 
     }
 }

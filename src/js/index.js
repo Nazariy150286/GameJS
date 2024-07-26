@@ -1,8 +1,12 @@
 import './year';
+import './header-modal';
 import './calculator';
 import './time';
 import './randnum';
 import './rps';
 import './team';
+import './header';
 import './google-dino';
 import './scientists';
+import './football';
+import './foter-modal'
