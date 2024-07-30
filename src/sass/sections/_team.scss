@@ -7,7 +7,7 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
-    color: #000;
+    color: inherit;
     text-align: center;
     margin-top: 36px;
     margin-bottom: 36px;
@@ -25,14 +25,14 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    color: #000;
+    color: inherit;
     margin: 30px 0;
   }
   &__item-descr {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
-    color: #000;
+    color: inherit;
   }
   &__img {
     border-radius: 20px;
@@ -65,15 +65,22 @@
   }
   &__nextBtn {
     z-index: 1000;
-    background: #fff;
+    border-inline: 0;
     border: 0;
     cursor: pointer;
+    background-color: inherit;
+    & svg:hover {
+      fill: #717171;
+    }
   }
   &__prevBtn {
     z-index: 1000;
-    background: #fff;
     border: 0;
     cursor: pointer;
+    background-color: inherit;
+    & svg:hover {
+      fill: #717171;
+    }
   }
 }
 .dots {

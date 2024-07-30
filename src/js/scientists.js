@@ -55,7 +55,8 @@ buttons[3].addEventListener('click', () => {
   const albertEinstein = scientists.find(
     scientist => scientist.name === 'Albert' && scientist.surname === 'Einstein'
   );
-  alert(`Albert Einstein народився у ${albertEinstein.born}`);
+  // alert(`Albert Einstein народився у ${albertEinstein.born}`);
+  displayScientists([albertEinstein]);
 });
 
 buttons[4].addEventListener('click', () => {

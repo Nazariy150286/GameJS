@@ -3,7 +3,7 @@
     font-family: var(--Montserrat);
     font-weight: 400;
     font-size: 24px;
-    color: #000;
+    color: inherit;
     text-align: center;
     margin: 36px 0;
   }
@@ -17,7 +17,7 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
-    color: #000;
+    color: inherit;
     text-align: center;
     margin: 36px 0;
   }
@@ -52,12 +52,14 @@
     align-items: center;
     gap: 149px;
     margin-bottom: 37px;
-   
   }
 
   &__input-wrapper {
     display: flex;
     align-items: center;
-
+  }
+  &__input-btn {
+    border: 0;
+    padding: 12px;
   }
 }
